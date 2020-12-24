@@ -1,0 +1,13 @@
+platformConfig:
+  imageRegistry: xxx.cargo.io
+  imageRepositoryRelease: release
+  imagePullPolicy: Always
+
+image:
+  name: pytorch-operator
+
+command:
+  - /pytorch-operator
+  - --alsologtostderr
+  - -v=1
+  - --monitoring-port=8443
